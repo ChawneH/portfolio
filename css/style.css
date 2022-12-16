@@ -51,6 +51,14 @@ nav a:hover, #showcaseA a:hover{
     color: grey;
     
 }
+#navbarA{
+    background-color: blueviolet;
+    padding-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
 .navbar{
     width: 100%;
 }
