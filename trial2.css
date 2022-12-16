@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+
+* {
+    font-family: 'Handlee';
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: auto;
+}
+body a{
+    text-decoration: none;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+#showcaseA{
+    background-color: blueviolet;
+    padding-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+   
+
+}
+#showcase{
+    background: url('../img/galactic.jpg') no-repeat 50px;
+    padding-bottom: 200px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+   
+
+}
+nav .social-list1{
+    font-size: 30px;
+    margin-top: 45px;
+    letter-spacing: 10px;
+    float: right;
+}
+
+#showcase h2{
+    text-transform: uppercase;
+    font-size:  65px;
+}
+#showcase a, #showcaseA a{
+    color: #fffafa;
+    font-size: 20px;
+    transition: 0.5s;
+}
+#showcase a:hover, #showcaseA a:hover{
+    color: grey;
+    
+}
+nav li{
+    margin-top: 45px;
+    float: left;
+}
+#showcase li, #showcaseA li{;
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+#intro{
+    letter-spacing: 8px;
+    margin-top: 200px;
+    font-size: 40px;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: black 2px solid;
+    border-radius: 7%;
+    margin-top: 40px;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+.btn:hover{
+    transform: scale(1.05);
+   
+}
+#about{
+    background-color: white; /*rgba(221, 221, 221, 0.33)*/
+    color: black;
+    padding-bottom: 100px;
+    
+}
+#about aside#sidebar{
+    float: right;
+    width: 55%;
+    margin-top: 100px;
+    
+}
+#about img{
+    margin-top: 100px;
+    width: 40%;
+    
+}
+#about p{
+    font-size: 28px;
+}
+#showcase .fix-me{
+    padding-top: 30px;
+}
+#services h2{
+    font-size: 30px;
+    margin-top: 50px;
+}
+#services h3{
+    font-size: 22px;
+}
+#services {
+    background-color: rgba(221, 221, 221, 0.33);
+    text-align: center;
+    color: black;
+    padding-bottom: 100px;
+}
+#boxes .bxes{
+    background-color: transparent;
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    width: 80%;
+    font-size: 20px;
+    padding: 0 5px;
+    text-align: left;
+    margin-left: 100px;
+    
+}
+#boxes .bxes h3{
+    color: black;
+    border-bottom: 2px black solid;
+    background-size: 40px;
+    font-size: 25px;
+}
+#projects{
+    background-color: white;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    text-align: center;
+}
+#projects h2{
+    color: black;
+    font-size: 30px;
+}
+#contact{
+    background-color: rgba(221, 221, 221, 0.33);
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: black;
+}
+#contact h1{
+    font-size: 30px;
+}
+#contact form{
+    background-color: transparent;
+    font-size: 30px;
+    
+}
+#contact .container{
+    width:30%;
+}
+.footer {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+#contact input[type=text], input[type="email"]{
+    width: 400px;
+    height: 30px;
+    padding: 4px;
+}
+#contact textarea{
+    width: 400px;
+    height: 120px;
+    padding: 4px;
+}
+#contact .contacts-btn {
+    background-color: gray !important;
+    color: #ffffff !important;
+    width: 170px;
+    height: 54px;
+    border-radius: 3px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 0px;
+}
+.footer a {
+    color: #fffafa;
+}
+
+.footer .footer-top {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media(max-width: 780px){
+    
+    #contact .container{
+        width:65%;
+    }
+    footer{
+        font-size: 18px;
+        
+    padding: none;
+    }
+    footer nav{
+        margin-top: 75px;
+        display: block;
+    }
+    
+}
+
+/****Responsive Navbar*****/
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        margin-top: 30px;
+        display: flex;
+    }
+
+   .navbar {
+
+    justify-content: space-between;
+    
+    background-color: #333;
+    color: white;
+}
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+}
+/*****Grid CSS*****/
+.grid-container{
+    display: grid;
+    grid-template: 
+   "project1 project1 project2 project2" 
+   "project3 project3 project4 project4" 
+}
+.grid-item{
+    transition: 0.5s;
+    padding: 2px;
+}
+.grid-item:hover{
+    
+    transform: scale(1.02);
+}
+ .item-1{
+     
+     grid-area: project1;
+
+}
+.item-2{
+    grid-area: project2;
+
+}
+.item-3{
+    grid-area: project3;
+}
+.item-4{
+    grid-area: project4;
+}
+
