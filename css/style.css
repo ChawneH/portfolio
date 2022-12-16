@@ -51,15 +51,15 @@ nav a:hover, #showcaseA a:hover{
     color: grey;
     
 }
-#navbarA{
+header{
     background-color: blueviolet;
 }
-#navbarA a{
-    color: #black;
+header a{
+    color: !important #black;
     font-size: 20px;
     transition: 0.5s;
 }
-#navbarA a:hover{
+header a:hover{
     color: grey;
 }
 .navbar{
@@ -97,7 +97,7 @@ nav li, nav li{;
    
 }
  #about{
-    background-color: black; /*rgba(221, 221, 221, 0.33)*/
+    background-color: blueviolet; /*rgba(221, 221, 221, 0.33)*/
     color: white;
     padding-bottom: 100px;
     
