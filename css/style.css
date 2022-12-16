@@ -51,13 +51,13 @@ nav a:hover, #showcaseA a:hover{
     color: grey;
     
 }
-#navbarA{
+nav #navbarA{
     background-color: blueviolet;
     padding-bottom: 20px;
     background-size: cover;
     background-position: center;
     text-align: center;
-    color: white;
+    color: Black;
 }
 .navbar{
     width: 100%;
