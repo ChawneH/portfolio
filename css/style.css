@@ -53,11 +53,14 @@ nav a:hover, #showcaseA a:hover{
 }
 #navbarA{
     background-color: blueviolet;
-    padding-bottom: 20px;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    color: Black;
+}
+#navbarA a{
+    color: #black;
+    font-size: 20px;
+    transition: 0.5s;
+}
+#navbarA a:hover{
+    color: grey;
 }
 .navbar{
     width: 100%;
@@ -93,7 +96,7 @@ nav li, nav li{;
     transform: scale(1.05);
    
 }
-/* #about{
+ #about{
     background-color: black; /*rgba(221, 221, 221, 0.33)*/
     color: white;
     padding-bottom: 100px;
@@ -109,7 +112,7 @@ nav li, nav li{;
     margin-top: 100px;
     width: 40%;
     
-} */
+} 
 #about p{
     font-size: 28px;
 }
