@@ -15,42 +15,59 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.easing.min.js" defer></script>
 
-  <script src="js/custom.js"></script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAxtMdO3q68Kh7dU3-ncLoaX32L7arMrmU",
+    authDomain: "chawne-harris-jr.firebaseapp.com",
+    projectId: "chawne-harris-jr",
+    storageBucket: "chawne-harris-jr.appspot.com",
+    messagingSenderId: "711647720494",
+    appId: "1:711647720494:web:c8d2e5cb3b54f241379bbf"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
   <link rel="shortcut icon" href="">
 
 
 </head>
-
 <body>
+    <nav id="navbar active">
+       
+        <div class="navbar-links">
+          <ul>
+            <li><a href="./index.html" class="nav-link">Home</a></li>
+            <li><a href="./about.html"class="nav-link">About</a></li>
+            <li><a href="./services.html"class="nav-link">Services</a></li>
+            <li><a href="./projects.html"class="nav-link">Projects</a></li>
+            <li><a href="./contact.html"class="nav-link">Contact</a></li>
+    
+          </ul>
+          <div class="social-list1">
+            <a href="https://www.facebook.com/thinkin.gud" alt="facebook"><i class="fa fa-facebook"
+                aria-hidden="true"></i></a>
+            <a href="https://www.tumblr.com/blog/thedopestdorkz"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/goat.npg/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://github.com/ChawneH"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </div>
+        </div>
+    </nav>
+<button onclick="toggle_visibility('navbar');" id="" class="toggle-button">
+  <a href="">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+</button>
   <section id="showcase" class="bckg">
     <div class="container">
-      <nav class="navbar">
-        <div>
-          <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span> </a>
-          <div class="navbar-links">
-            <ul>
-              <li><a href="./index">Home</a></li>
-              <li><a href="./about">About</a></li>
-              <li><a href="./services">Services</a></li>
-              <li><a href="./projects">Projects</a></li>
-              <li><a href="./contact">Contact</a></li>
-
-            </ul>
-            <div class="social-list1">
-              <a href="https://www.facebook.com/thinkin.gud" alt="facebook"><i class="fa fa-facebook"
-                  aria-hidden="true"></i></a>
-              <a href="https://www.tumblr.com/blog/thedopestdorkz"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
-              <a href="https://www.instagram.com/goat.npg/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-              <a href="https://github.com/ChawneH"><i class="fa fa-github" aria-hidden="true"></i></a>
-            </div>
-            </div>
-            </div>
-      </nav>
-
-
       <div id="intro">
         <h2>Chawne A Harris Jr</h2>
         <p>Building the People Around Us</p>
@@ -183,7 +200,7 @@
       </div>
     </div>
   </footer>
-
+<script src="./js/custom.js"></script>
 </body>
 
 </html>

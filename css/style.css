@@ -20,16 +20,7 @@ body a{
     margin: auto;
     overflow: hidden;
 }
-#showcaseA{
-    background-color: blueviolet;
-    padding-bottom: 20px;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    color: white;
-   
 
-}
 #showcase{
     background: url('../img/galactic.jpg') no-repeat 50px;
     padding-bottom: 200px;
@@ -51,18 +42,17 @@ nav .social-list1{
     text-transform: uppercase;
     font-size:  65px;
 }
-#showcase a, #showcaseA a{
+nav a, header a{
     color: #fffafa;
     font-size: 20px;
     transition: 0.5s;
 }
-#showcase a:hover, #showcaseA a:hover{
+nav a:hover, #showcaseA a:hover{
     color: grey;
     
 }
 .navbar{
     width: 100%;
-    background-color: black;
 }
 .navbar-links{
     width: 85%;
@@ -71,14 +61,14 @@ nav li{
     margin-top: 45px;
     float: left;
 }
-#showcase li, #showcaseA li{;
+nav li, nav li{;
     float: left;
     display: inline;
     padding: 0 20px 0 20px;
 }
 #intro{
     letter-spacing: 8px;
-    margin-top: 200px;
+    margin-top: 250px;
     font-size: 40px;
 }
 .btn{
@@ -214,6 +204,15 @@ nav li{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.toggle-button {
+    display: none;
+}
+nav {
+    display: inline;
+    z-index: 99;
+    min-height: 100%;
+}
+
 @media(max-width: 780px){
     
     #contact .container{
@@ -233,20 +232,30 @@ nav li{
 
 /****Responsive Navbar*****/
 .toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
+    position: fixed;
+    appearance: none;
+    border: none ;
+    outline: none;
+    background: none;
+    top: 10px;
+    right: 75px;
+    z-index: 100;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
     height: 21px;
 }
 
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
+.toggle-button span {
+    position: relative;
+    display: block;
+    height: 4px;
+    width: 33px;
+    z-index: 1;
+    margin: 5px;
     background-color: white;
-    border-radius: 10px;
+}
+.toggle-button:hover {
 }
 @media (max-width: 800px) {
     
@@ -255,8 +264,44 @@ nav li{
         margin-top: 45px;
         display: flex;
     }
-    .navbar-links{
+    .toggle-button:hover span:nth-child(2){
+        transform: translateX(10px);
+        transition: ease 0.2s;
+        background-color: aqua;
+    }
+    .toggle-button.active span:nth-child(1){
+        transform: translate(1px, -2px) rotate(45deg);
+       
+
+
+    }
+    .toggle-button.active span:nth-child(2) {
+        opacity: 0;
+        transform: translateX(15);
+    
+    
+    }
+    .toggle-button.active span:nth-child(3) {
+        transform: translate(1.5px, -20px) rotate(-45deg);
+    
+    
+    }
+    nav #navbar.active {
+        display: inline;
+    }
+    nav  {
         display: none;
+        position: fixed;
+        top: 0%;
+        left: 40%;
+        z-index: 99;
+        background-color: black;
+        min-height: 100%;
+       
+    }
+    .navbar-links li, .social-list1{
+        padding: 20px;
+        transform: scale(1.05);
         width: 90%;
     }
 
@@ -265,8 +310,12 @@ nav li{
         flex-direction: column;
         width: 100%;
     }
+    .social-list1 a {
+        font-size: 30px;
+        padding-left:5%;
+    }
     .navbar-links.active{
-        display: flex;
+        /* display: flex; */
         
     }
     #about {
