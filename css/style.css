@@ -51,7 +51,7 @@ nav a:hover, #showcaseA a:hover{
     color: grey;
     
 }
-nav #navbarA{
+#navbarA{
     background-color: blueviolet;
     padding-bottom: 20px;
     background-size: cover;
